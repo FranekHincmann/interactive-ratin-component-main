@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Solution | Interactive rating component</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container" id="container">
+      <img src="./images/icon-star.svg" alt="" class="star-svg" />
+      <div class="heading">
+        <h2 class="nav-two">How did we do?</h2>
+      </div>
+      <div class="description">
+        <p class="paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="numbers-div">
+        <button class="one">1</button>
+        <button class="one">2</button>
+        <button class="one">3</button>
+        <button class="one">4</button>
+        <button class="one">5</button>
+      </div>
+      <div class="submit-div">
+        <button class="button-submit" id="button-submit">SUBMIT</button>
+      </div>
+    </main>
+
+    <aside class="another-container hidden">
+      <img src="./images/illustration-thank-you.svg" alt="" class="photo-svg" />
+      <div class="another-description">
+        <h4 class="selected-nav">Your selected 4 out of 5</h4>
+      </div>
+      <div class="heading-another">
+        <h2 class="thank">Thank you!</h2>
+      </div>
+      <div class="another-paragraph">
+        <p class="another-paragraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </aside>
+
+    <script>
+      const submitButton = document.querySelector(".button-submit");
+      const mainContainer = document.querySelector("main");
+      const asideContainer = document.querySelector("aside");
+
+      submitButton.addEventListener("click", function () {
+        if (
+          mainContainer.style.display === "" ||
+          mainContainer.style.display === "block"
+        ) {
+          mainContainer.style.display = "none";
+          asideContainer.style.display = "block";
+        } else {
+          mainContainer.style.display = "block";
+          asideContainer.style.display = "none";
+        }
+      });
+
+      mainContainer.style.display = "block";
+      asideContainer.style.display = "none";
+    </script>
+  </body>
+</html>

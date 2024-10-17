@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-Orange: hsl(25, 97%, 53%);
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Light-Grey: hsl(217, 12%, 63%);
+  --clr-Dark-Blue: hsl(213, 19%, 18%);
+  --clr-Very-Dark-Blue: hsl(216, 12%, 8%);
+  /* fonts */
+  --ff1-font-family: "Overpass", sans-serif; /*     Weights: 400, 700     */
+}
+body,
+html {
+  background: var(--clr-Very-Dark-Blue);
+  font-family: var(--ff1-font-family);
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: var(--clr-Dark-Blue);
+  max-width: 27rem;
+  padding: 2.1rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  display: block;
+}
+
+.star-svg {
+  padding-bottom: 1.5rem;
+}
+
+.nav-two {
+  color: white;
+  font-weight: 400;
+  padding-bottom: 0.7rem;
+}
+
+.paragraph {
+  color: lightslategray;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.one {
+  width: 55px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+  color: lightslategray;
+  background: darkslategray;
+  border-radius: 50%;
+  margin: 0.45rem;
+}
+.one:hover {
+  background: var(--clr-Orange);
+  color: var(--clr-Very-Dark-Blue);
+}
+.one:active {
+  background: white;
+}
+
+.button-submit {
+  width: 22.7rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background: var(--clr-Orange);
+}
+.button-submit:active {
+  background: white;
+}
+/* Thank you container */
+
+.another-container {
+  background: var(--clr-Dark-Blue);
+  max-width: 27rem;
+  padding: 2.1rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  display: none;
+  text-align: center;
+}
+
+.photo-svg {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.selected-nav {
+  background: darkslategray;
+  text-align: center;
+  margin: 0 auto;
+  width: 14rem;
+  border-radius: 1rem;
+  color: var(--clr-Orange);
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 2px;
+}
+
+.thank {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--clr-White);
+  font-weight: 700;
+}
+
+.another-paragraph {
+  color: var(--clr-Light-Grey);
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 0.6rem;
+}
